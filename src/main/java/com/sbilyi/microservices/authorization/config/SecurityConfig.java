@@ -2,6 +2,7 @@ package com.sbilyi.microservices.authorization.config;
 
 import com.sbilyi.microservices.authorization.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -84,6 +85,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/api/user/checkUsernameAvailability", "/api/user/checkEmailAvailability")
                         .permitAll()
                     .antMatchers(HttpMethod.GET, "/api/polls/**", "/api/users/**")
+                        .permitAll()
+                    .antMatchers("/actuator/**")
                         .permitAll()
                     .anyRequest()
                         .authenticated();

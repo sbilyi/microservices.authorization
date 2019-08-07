@@ -13,7 +13,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring.boot.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -95,6 +99,14 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
+
+        <!-- Micrometer Prometheus registry  -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>${micrometer-prometheus.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -158,6 +170,7 @@
         <flyway-core.version>5.2.4</flyway-core.version>
         <spring-security-test.version>5.1.6.RELEASE</spring-security-test.version>
         <jjwt.version>0.9.1</jjwt.version>
+        <micrometer-prometheus.version>1.2.0</micrometer-prometheus.version>
     </properties>
 
 </project>
