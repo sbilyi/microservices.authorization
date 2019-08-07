@@ -23,3 +23,5 @@ curl -X GET \
     -H "Content-Type: application/json"\
     -H "Authorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTY1MTM1MTA5LCJleHAiOjE1NjU3Mzk5MDl9.DpHDYG8OVZhXk32Y5LmFskPaGOVjyxqPyumeBG3LI3bCz7vjHEQCEFyksMK4D_Hc6LItStZwIzofH95HLPS7SA" \
     localhost:8080/api/user/me
+    
+    curl -X POST -d '{"name":"sergii", "username":"karta2is", "email":"kartani2oid@gmail.com", "password": "secret123"}' -H "Content-Type: application/json" localhost:8080/api/auth/signup
