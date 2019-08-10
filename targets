@@ -1,0 +1,3 @@
+GET http://localhost:8080/api/user/me
+Content-Type: application/json
+Authorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTY1MTcxMjI1LCJleHAiOjE1NjU3NzYwMjV9.sdTcC4-996fJ6onXRDYtYXODo29ZJGsW8_N4b6GuXZWPugim5xY44tu-ECjYksrU0mCgtir0v4RrpqubWokMBQ

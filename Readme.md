@@ -21,7 +21,10 @@ curl -s -X POST -d '{"usernameOrEmail":"kartanisoid@gmail.com", "password": "sec
 
 curl -X GET \
     -H "Content-Type: application/json"\
-    -H "Authorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTY1MTM1MTA5LCJleHAiOjE1NjU3Mzk5MDl9.DpHDYG8OVZhXk32Y5LmFskPaGOVjyxqPyumeBG3LI3bCz7vjHEQCEFyksMK4D_Hc6LItStZwIzofH95HLPS7SA" \
+    -H "Authorization: Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTY1MTcxMjI1LCJleHAiOjE1NjU3NzYwMjV9.sdTcC4-996fJ6onXRDYtYXODo29ZJGsW8_N4b6GuXZWPugim5xY44tu-ECjYksrU0mCgtir0v4RrpqubWokMBQ" \
     localhost:8080/api/user/me
     
     curl -X POST -d '{"name":"sergii", "username":"karta2is", "email":"kartani2oid@gmail.com", "password": "secret123"}' -H "Content-Type: application/json" localhost:8080/api/auth/signup
+    
+    
+echo GET http://example.com | vegeta.exe attack -duration=5s -rate=5
