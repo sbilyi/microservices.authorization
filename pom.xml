@@ -115,7 +115,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.acme.games.rockpaperscissors.main.Application</mainClass>
+                    <mainClass>com.sbilyi.microservices.authorization.Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>
